@@ -1,0 +1,7 @@
+services:
+  customer-service:
+    base-url: ${CUSTOMER_SERVICE_BASE_URL:http://localhost:8080}
+    profile-path-url: /customers/{customerId}/profile
+
+server:
+  port: 9000
