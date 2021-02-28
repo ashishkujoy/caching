@@ -1,0 +1,3 @@
+customer-service:
+  min-delay: ${CUSTOMER_SERVICE_MIN_API_DELAY:200}
+  max-delay: ${CUSTOMER_SERVICE_MAX_API_DELAY:300}

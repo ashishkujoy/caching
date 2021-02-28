@@ -6,7 +6,7 @@ services:
       - "9000:9000"
     environment:
       - CUSTOMER_SERVICE_BASE_URL=http://customer-service:8080
-      - CACHING_ENABLED=false
+      - CACHING_ENABLED=true
     networks:
       - caching-application
   customer-service:
