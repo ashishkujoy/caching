@@ -1,0 +1,17 @@
+version: "3.9" # optional since v1.27.0
+services:
+  bff:
+    image: ashishkujoy/bff:0.0.1
+    ports:
+      - "9000:9000"
+    environment:
+      - CUSTOMER_SERVICE_BASE_URL=http://customer-service:8080
+      - CACHING_ENABLED=false
+    networks:
+      - caching-application
+  customer-service:
+    image: ashishkujoy/customer-service:0.0.1
+    networks:
+      - caching-application
+networks:
+  caching-application:
