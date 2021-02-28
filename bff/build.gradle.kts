@@ -26,11 +26,14 @@ dependencies {
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
 	implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
 	implementation("org.jetbrains.kotlinx:kotlinx-coroutines-reactor")
+
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 	testImplementation("io.projectreactor:reactor-test")
 	testImplementation("io.kotest:kotest-runner-junit5-jvm:4.4.1")
 	testImplementation("io.kotest:kotest-assertions-core-jvm:4.4.1")
 	testImplementation("com.ninja-squad:springmockk:3.0.1")
+	testImplementation("com.github.tomakehurst:wiremock-jre8:2.27.2")
+
 
 }
 
